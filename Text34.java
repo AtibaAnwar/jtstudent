@@ -1,21 +1,22 @@
 interface X{
-void call();}
+  void call();
+}
 interface Y extends X{
-void show();
+  void show();
 }
 public class Text34 implements Y{
 @Override 
-public void call(){
-System.out.println("Hello");
+  public void call(){
+    System.out.println("Hello");
 }
 @Override 
-public void show(){
-System.out.println("hi");
+  public void show(){
+    System.out.println("hi");
 }
 public static void main(String args[]){
-X aa=new Text34();
-aa.call();
-((Y)aa).show();
-}
+  X aa=new Text34();
+  aa.call();
+  ((Y)aa).show();
+  }
 }
 
